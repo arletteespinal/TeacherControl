@@ -22,16 +22,19 @@ namespace BLL
             Clave = null;
             IdTipoUsuario = 0;
             Estatus = 0;
+            IdUsuario = 0;
         }
 
         public bool Insertar()
         {
             return conexion.EjecutarDB("INSERT INTO Usuarios(Nombre,Clave,IdTipoUsuario,Estatus)VALUES('" + this.Nombre + "','" + this.Clave + "','" + this.IdTipoUsuario.ToString() + "','" + this.Estatus.ToString() + "')");
         }
+
         public bool Modificar()
         {
             return conexion.EjecutarDB("UPDATE Usuarios SET Nombre='" + this.Nombre + "', Clave='" + this.Clave + "', IdTipoUsuario='" + this.IdTipoUsuario.ToString() + "', Estatus='" + this.Estatus.ToString() + "' WHERE IdUsuario='" + this.IdUsuario.ToString() + "'");
         }
+
         public bool Eliminar()
         {
             return conexion.EjecutarDB("DELETE FROM Usuarios WHERE IdUsuario='" + this.IdUsuario + "'");
@@ -55,8 +58,26 @@ namespace BLL
             return Retorno;
         }
 
-        public DataTable Listar(string campos, string where)
+        public Boolean Autenticar(string NombreUsuario, string Clave)
         {
+            bool Retorno = false;
+            DataTable dt = new DataTable();
+
+            dt = conexion.BuscarDb("SELECT IdUsuario,IdTipoUsuario from Usuarios Where Nombre = '" + NombreUsuario + "' And Clave = '" + Clave + "'");
+
+            if (dt.Rows.Count > 0)
+            {
+                Retorno = true;
+                IdUsuario = (int)dt.Rows[0]["IdUsuario"];
+                IdTipoUsuario = (int)dt.Rows[0]["IdTipoUsuario"];
+            }
+
+            return Retorno;
+        }
+
+        public static DataTable Listar(string campos, string where)
+        {
+            Conexion conexion = new Conexion();
             return conexion.BuscarDb("Select " + campos + " from Usuarios where " + where);
         }
 

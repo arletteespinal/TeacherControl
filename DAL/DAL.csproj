@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{23944000-C626-443C-9F53-793E1434E503}</ProjectGuid>
+    <ProjectGuid>{53B7C57A-858F-438C-A64C-266DF103A8C8}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BLL</RootNamespace>
-    <AssemblyName>BLL</AssemblyName>
+    <RootNamespace>DAL</RootNamespace>
+    <AssemblyName>DAL</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -31,6 +31,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -39,27 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Asignaturas.cs" />
-    <Compile Include="CalificacionesEstudiantes.cs" />
-    <Compile Include="CalificacionEstudiantesDetalle.cs" />
-    <Compile Include="DiasSemana.cs" />
-    <Compile Include="Estudiantes.cs" />
-    <Compile Include="EvaluacionesDetalle.cs" />
-    <Compile Include="EvaluacionesGrupos.cs" />
-    <Compile Include="Grupos.cs" />
-    <Compile Include="Horarios.cs" />
-    <Compile Include="Inscripciones.cs" />
-    <Compile Include="Profesores.cs" />
+    <Compile Include="Conexion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Semestres.cs" />
-    <Compile Include="TiposEvaluaciones.cs" />
-    <Compile Include="Usuarios.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\DAL\DAL.csproj">
-      <Project>{53b7c57a-858f-438c-a64c-266df103a8c8}</Project>
-      <Name>DAL</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
