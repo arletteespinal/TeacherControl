@@ -41,7 +41,6 @@
   <ItemGroup>
     <Compile Include="Asignaturas.cs" />
     <Compile Include="CalificacionesEstudiantes.cs" />
-    <Compile Include="CalificacionEstudiantesDetalle.cs" />
     <Compile Include="DiasSemana.cs" />
     <Compile Include="Estudiantes.cs" />
     <Compile Include="EvaluacionesDetalle.cs" />

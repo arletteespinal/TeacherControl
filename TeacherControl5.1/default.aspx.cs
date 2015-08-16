@@ -17,10 +17,10 @@ namespace TeacherControl5._1
             usu = new Usuarios();
         }
 
-        protected void IniciarSeccionButton_Click(object sender, EventArgs e)
+        protected void IniciarButton_Click(object sender, EventArgs e)
         {
-            bool recordar=false;
-            if(RecuerdameCheckBox.Checked==false)
+            bool recordar = false;
+            if (RecuerdameCheckBox.Checked == false)
             {
                 recordar = false;
             }
@@ -29,28 +29,31 @@ namespace TeacherControl5._1
                 recordar = true;
             }
 
-            if (usu.Autenticar(UsuarioTextBox.Text, PasswordTextBox.Text))
+            if (usu.Autenticar(UsuarioTextBox.Text, ClaveTextBox.Text))
             {
+                FormsAuthentication.RedirectFromLoginPage(UsuarioTextBox.Text, recordar);
                 Session["IdUsuario"] = usu.IdUsuario;
-                if (usu.IdTipoUsuario == 0)
+                if (usu.IdTipoUsuario == 1)
                 {
                     Response.Redirect("~/ControlPanel/Administrador/InicioWeb.aspx");
                 }
-                else if (usu.IdTipoUsuario == 1)
+                else if (usu.IdTipoUsuario == 2)
                 {
                     Response.Redirect("~/ControlPanel/Profesor/InicioWeb.aspx");
                 }
-                else if (usu.IdTipoUsuario == 2)
+                else if (usu.IdTipoUsuario == 3)
                 {
-                    Response.Redirect("~/ControlPanel/Estudiante/Default.aspx");
+                    Response.Redirect("~/ControlPanel/Estudiante/InicioWeb.aspx");
                 }
-                //Session["usuario"] =NombreUsuarioTextBox.Text;
-                FormsAuthentication.RedirectFromLoginPage(UsuarioTextBox.Text, recordar);
+
+
             }
             else
             {
 
             }
         }
+
+        
     }
 }

@@ -59,6 +59,7 @@
   <ItemGroup>
     <Content Include="ControlPanel\Administrador\Consultas\AsignaturasWeb.aspx" />
     <Content Include="ControlPanel\Administrador\Consultas\CalificacionesWeb.aspx" />
+    <Content Include="ControlPanel\Administrador\Consultas\EvaluacionesGruposWeb.aspx" />
     <Content Include="ControlPanel\Administrador\Consultas\GruposWeb.aspx" />
     <Content Include="ControlPanel\Administrador\Consultas\InscripcionesWeb.aspx" />
     <Content Include="ControlPanel\Administrador\Consultas\SemestresWeb.aspx" />
@@ -74,34 +75,56 @@
     <Content Include="ControlPanel\Administrador\Registros\SemestresWeb.aspx" />
     <Content Include="ControlPanel\Administrador\Registros\TiposEvaluacionesWeb.aspx" />
     <Content Include="ControlPanel\Administrador\Registros\UsuariosWeb.aspx" />
+    <Content Include="ControlPanel\Estudiante\Consultas\AsignacionesWeb.aspx" />
     <Content Include="ControlPanel\Estudiante\Consultas\Calificaciones.aspx" />
     <Content Include="ControlPanel\Estudiante\Consultas\GruposInscritos.aspx" />
     <Content Include="ControlPanel\Estudiante\Consultas\MiProgreso.aspx" />
+    <Content Include="ControlPanel\Estudiante\InicioWeb.aspx" />
+    <Content Include="ControlPanel\Estudiante\Registros\CambiarClaveWeb.aspx" />
+    <Content Include="ControlPanel\Estudiante\Registros\EnviarAsignacionWeb.aspx" />
+    <Content Include="ControlPanel\Estudiante\Registros\InformacionPersonalWeb.aspx" />
     <Content Include="ControlPanel\Estudiante\Registros\InscribirGrupo.aspx" />
-    <Content Include="ControlPanel\Estudiante\Registros\MiPerfil.aspx" />
+    <Content Include="ControlPanel\Logout.aspx" />
+    <Content Include="ControlPanel\Profesor\Consultas\AsignaturasWeb.aspx" />
+    <Content Include="ControlPanel\Profesor\Consultas\CalificacionesEstudiantesWeb.aspx" />
+    <Content Include="ControlPanel\Profesor\Consultas\EvaluacionesGruposWeb.aspx" />
+    <Content Include="ControlPanel\Profesor\Consultas\GruposWeb.aspx" />
+    <Content Include="ControlPanel\Profesor\Consultas\InscripcionesWeb.aspx" />
+    <Content Include="ControlPanel\Profesor\Consultas\SemestresWeb.aspx" />
+    <Content Include="ControlPanel\Profesor\Consultas\TiposEvaluacionesWeb.aspx" />
     <Content Include="ControlPanel\Profesor\InicioWeb.aspx" />
     <Content Include="ControlPanel\Profesor\Registros\AsignaturasWeb.aspx" />
+    <Content Include="ControlPanel\Profesor\Registros\CalificacionesEstudiantesWeb.aspx" />
+    <Content Include="ControlPanel\Profesor\Registros\EvaluacionesGruposWeb.aspx" />
     <Content Include="ControlPanel\Profesor\Registros\GruposWeb.aspx" />
     <Content Include="ControlPanel\Profesor\Registros\InscripcionesWeb.aspx" />
     <Content Include="ControlPanel\Profesor\Registros\SemestresWeb.aspx" />
     <Content Include="ControlPanel\Profesor\Registros\TiposEvaluacionesWeb.aspx" />
     <Content Include="Registrarse.aspx" />
     <Content Include="Resource\css\estilo.css" />
+    <Content Include="Resource\css\estilo_index_adm.css" />
     <Content Include="Resource\css\estilo_index_estudiantes.css" />
     <Content Include="Resource\css\estilo_index_prof.css" />
     <Content Include="Resource\css\estilo_index_profesores.css" />
+    <Content Include="Resource\css\estilo_index_signin.css" />
     <Content Include="Resource\css\fonts.css" />
     <Content Include="Resource\css\jquery-ui.css" />
     <Content Include="Resource\fonts\icomoon.svg" />
     <Content Include="Resource\img\logo.jpg" />
+    <Content Include="Resource\img\perfil.png" />
     <Content Include="Resource\js\jquery-latest.js" />
     <Content Include="Resource\js\main.js" />
     <Content Include="Resource\js\menuJs.js" />
+    <Content Include="Resource\js\menu_adm.js" />
     <Content Include="Resource\js\menu_profesores.js" />
+    <Content Include="Resource\js\query-estudiantes.js" />
     <Content Include="Resource\js\queryMenu.js" />
-    <Content Include="Login.aspx" />
+    <Content Include="default.aspx" />
+    <Content Include="Resource\js\queryRegistro.js" />
     <Content Include="Resource\Scripts\jquery-1.8.2.min.js" />
     <Content Include="Resource\Scripts\jquery-ui.js" />
+    <Content Include="Resource\Scripts\jquery.timepicker.css" />
+    <Content Include="Resource\Scripts\jquery.timepicker.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -125,6 +148,13 @@
     </Compile>
     <Compile Include="ControlPanel\Administrador\Consultas\CalificacionesWeb.aspx.designer.cs">
       <DependentUpon>CalificacionesWeb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\Administrador\Consultas\EvaluacionesGruposWeb.aspx.cs">
+      <DependentUpon>EvaluacionesGruposWeb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\Administrador\Consultas\EvaluacionesGruposWeb.aspx.designer.cs">
+      <DependentUpon>EvaluacionesGruposWeb.aspx</DependentUpon>
     </Compile>
     <Compile Include="ControlPanel\Administrador\Consultas\GruposWeb.aspx.cs">
       <DependentUpon>GruposWeb.aspx</DependentUpon>
@@ -231,6 +261,13 @@
     <Compile Include="ControlPanel\Administrador\Registros\UsuariosWeb.aspx.designer.cs">
       <DependentUpon>UsuariosWeb.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ControlPanel\Estudiante\Consultas\AsignacionesWeb.aspx.cs">
+      <DependentUpon>AsignacionesWeb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\Estudiante\Consultas\AsignacionesWeb.aspx.designer.cs">
+      <DependentUpon>AsignacionesWeb.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ControlPanel\Estudiante\Consultas\Calificaciones.aspx.cs">
       <DependentUpon>Calificaciones.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -252,6 +289,34 @@
     <Compile Include="ControlPanel\Estudiante\Consultas\MiProgreso.aspx.designer.cs">
       <DependentUpon>MiProgreso.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ControlPanel\Estudiante\InicioWeb.aspx.cs">
+      <DependentUpon>InicioWeb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\Estudiante\InicioWeb.aspx.designer.cs">
+      <DependentUpon>InicioWeb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\Estudiante\Registros\CambiarClaveWeb.aspx.cs">
+      <DependentUpon>CambiarClaveWeb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\Estudiante\Registros\CambiarClaveWeb.aspx.designer.cs">
+      <DependentUpon>CambiarClaveWeb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\Estudiante\Registros\EnviarAsignacionWeb.aspx.cs">
+      <DependentUpon>EnviarAsignacionWeb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\Estudiante\Registros\EnviarAsignacionWeb.aspx.designer.cs">
+      <DependentUpon>EnviarAsignacionWeb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\Estudiante\Registros\InformacionPersonalWeb.aspx.cs">
+      <DependentUpon>InformacionPersonalWeb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\Estudiante\Registros\InformacionPersonalWeb.aspx.designer.cs">
+      <DependentUpon>InformacionPersonalWeb.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ControlPanel\Estudiante\Registros\InscribirGrupo.aspx.cs">
       <DependentUpon>InscribirGrupo.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -259,12 +324,61 @@
     <Compile Include="ControlPanel\Estudiante\Registros\InscribirGrupo.aspx.designer.cs">
       <DependentUpon>InscribirGrupo.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ControlPanel\Estudiante\Registros\MiPerfil.aspx.cs">
-      <DependentUpon>MiPerfil.aspx</DependentUpon>
+    <Compile Include="ControlPanel\Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ControlPanel\Estudiante\Registros\MiPerfil.aspx.designer.cs">
-      <DependentUpon>MiPerfil.aspx</DependentUpon>
+    <Compile Include="ControlPanel\Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\Profesor\Consultas\AsignaturasWeb.aspx.cs">
+      <DependentUpon>AsignaturasWeb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\Profesor\Consultas\AsignaturasWeb.aspx.designer.cs">
+      <DependentUpon>AsignaturasWeb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\Profesor\Consultas\CalificacionesEstudiantesWeb.aspx.cs">
+      <DependentUpon>CalificacionesEstudiantesWeb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\Profesor\Consultas\CalificacionesEstudiantesWeb.aspx.designer.cs">
+      <DependentUpon>CalificacionesEstudiantesWeb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\Profesor\Consultas\EvaluacionesGruposWeb.aspx.cs">
+      <DependentUpon>EvaluacionesGruposWeb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\Profesor\Consultas\EvaluacionesGruposWeb.aspx.designer.cs">
+      <DependentUpon>EvaluacionesGruposWeb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\Profesor\Consultas\GruposWeb.aspx.cs">
+      <DependentUpon>GruposWeb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\Profesor\Consultas\GruposWeb.aspx.designer.cs">
+      <DependentUpon>GruposWeb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\Profesor\Consultas\InscripcionesWeb.aspx.cs">
+      <DependentUpon>InscripcionesWeb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\Profesor\Consultas\InscripcionesWeb.aspx.designer.cs">
+      <DependentUpon>InscripcionesWeb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\Profesor\Consultas\SemestresWeb.aspx.cs">
+      <DependentUpon>SemestresWeb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\Profesor\Consultas\SemestresWeb.aspx.designer.cs">
+      <DependentUpon>SemestresWeb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\Profesor\Consultas\TiposEvaluacionesWeb.aspx.cs">
+      <DependentUpon>TiposEvaluacionesWeb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\Profesor\Consultas\TiposEvaluacionesWeb.aspx.designer.cs">
+      <DependentUpon>TiposEvaluacionesWeb.aspx</DependentUpon>
     </Compile>
     <Compile Include="ControlPanel\Profesor\InicioWeb.aspx.cs">
       <DependentUpon>InicioWeb.aspx</DependentUpon>
@@ -279,6 +393,20 @@
     </Compile>
     <Compile Include="ControlPanel\Profesor\Registros\AsignaturasWeb.aspx.designer.cs">
       <DependentUpon>AsignaturasWeb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\Profesor\Registros\CalificacionesEstudiantesWeb.aspx.cs">
+      <DependentUpon>CalificacionesEstudiantesWeb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\Profesor\Registros\CalificacionesEstudiantesWeb.aspx.designer.cs">
+      <DependentUpon>CalificacionesEstudiantesWeb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\Profesor\Registros\EvaluacionesGruposWeb.aspx.cs">
+      <DependentUpon>EvaluacionesGruposWeb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\Profesor\Registros\EvaluacionesGruposWeb.aspx.designer.cs">
+      <DependentUpon>EvaluacionesGruposWeb.aspx</DependentUpon>
     </Compile>
     <Compile Include="ControlPanel\Profesor\Registros\GruposWeb.aspx.cs">
       <DependentUpon>GruposWeb.aspx</DependentUpon>
@@ -315,12 +443,12 @@
     <Compile Include="EstudiantesSite.Master.designer.cs">
       <DependentUpon>EstudiantesSite.Master</DependentUpon>
     </Compile>
-    <Compile Include="Login.aspx.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
+    <Compile Include="default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Login.aspx.designer.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
+    <Compile Include="default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
     </Compile>
     <Compile Include="ProfesoresSite.Master.cs">
       <DependentUpon>ProfesoresSite.Master</DependentUpon>
@@ -345,6 +473,7 @@
     <Content Include="Resource\fonts\icomoon.eot" />
     <Content Include="Resource\fonts\icomoon.ttf" />
     <Content Include="Resource\fonts\icomoon.woff" />
+    <None Include="Properties\PublishProfiles\Arlette.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -359,7 +488,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="ControlPanel\Profesor\Consultas\" />
+    <Folder Include="ControlPanel\Estudiante\Tareas\" />
+    <Folder Include="ControlPanel\Perfiles\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

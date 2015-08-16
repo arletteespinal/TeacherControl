@@ -4,7 +4,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
    <asp:Label ID="Label1" runat="server" Text="Código:"></asp:Label>
     <asp:TextBox ID="CodigoTextBox" runat="server" Enabled="False"></asp:TextBox>
-    <asp:Button ID="BuscarButton" runat="server" Text="Buscar" CausesValidation="false"/>
+    <asp:Button ID="BuscarButton" runat="server" Text="Buscar" CausesValidation="false" OnClick="BuscarButton_Click"/>
     <br />
     <asp:Label ID="Label2" runat="server" Text="Periodo:"></asp:Label>
     <asp:TextBox ID="PeriodoTextBox" runat="server" MaxLength="6"></asp:TextBox>

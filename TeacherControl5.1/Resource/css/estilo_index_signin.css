@@ -1,0 +1,490 @@
+@charset "utf-8";
+*{
+	margin:0;
+	padding:0;
+	font-family:"Century Gothic";
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+body{
+	background-color:#fff;	
+}
+#logo img{
+	float:left;
+	width:200px;
+	margin-left:50px;
+	margin-top:10px;
+	height:140px;	
+}
+header{
+	width:100%;
+	background-color:#cFA;
+	height:45px;
+}
+#contenido{
+	background-color:#ddd;
+	width:100%;
+	height:500px;
+	float:left;	
+}
+footer{
+	background-color:#0099cc;
+	width:100%;
+	height:125px;
+	clear:both;
+	position:relative;
+}
+#bar{
+	float:left;
+	width:100%;
+	background-color:#0099cc;
+	height:45px;
+}
+.title-system{
+	width:400px;
+	height:40px;
+	margin-top:3px;
+	float:left;
+	margin-left:40px;
+}
+.title-system label{
+	float:left;
+	color:#FFF;
+	font-size:1.5em;
+	margin-top:5px;
+	margin-left:12px;
+}
+/*=========FORMULARIO PRINCIPAL===========*/
+.form1{
+	float:left;
+	margin-left:400px;
+	margin-top:70px;
+	width:500px;
+	height:300px;
+	background-color:#FFF;	
+	color:#0099cc;
+}
+.userName{
+	margin-left:50px;
+}
+.pass{
+	margin-left:50px;	
+}
+.confirmPass{
+	margin-left:50px;	
+}
+.user-type{
+	margin-left:50px;	
+}
+.nombre{
+	margin-top:50px;
+	margin-left:120px;	
+	padding:5px;	
+	margin-bottom:5px;
+    width:206px;
+}
+.contraseña{
+	margin-left:91px;	
+	padding:5px;
+	margin-bottom:5px;
+    width:206px;
+}
+.confirmContraseña{
+	margin-left:10px;	
+	padding:5px;
+	margin-bottom:5px;
+    width:206px;
+}
+.user-type-component{
+	width:145px;
+	margin-left:67px;
+	padding:5px;
+	margin-bottom:5px;
+    width:206px;
+}
+.btn-siguiente{
+	padding:5px;
+	font-size:1em;
+	background-color:#0099cc;
+	color:#FFF;
+	margin-left:400px;
+	margin-top:60px;
+}
+.btn-siguiente:hover{
+	cursor:pointer;	
+}
+/*=========================*/
+/*==========FORMULARIO PROFESORES*/
+.formProfesor{
+	float:left;
+	margin-left:400px;
+	margin-top:70px;
+	width:500px;
+	height:300px;
+	background-color:#FFF;	
+	color:#0099cc;
+}
+.name-label{
+	margin-left:15px;
+}
+.name-component{
+	margin-top:50px;
+	margin-left:3px;
+	padding:5px;
+	margin-bottom:5px;
+}
+.last-name-label{
+	margin-left:2px;
+
+}
+.last-name-component{
+	margin-top:50px;
+	margin-left:3px;
+	padding:5px;
+	margin-bottom:5px;
+}
+.gender-label{
+	margin-left:15px;
+}
+.gender-component{
+	margin-left:6px;
+	padding:5px;
+	margin-bottom:5px;
+	width:152px;
+}
+.phone-label{
+	margin-left:2px;
+}
+.phone-component{
+	margin-left:8px;
+	padding:5px;
+	margin-bottom:5px;
+}
+.document-type-label{
+	margin-left:15px;
+}
+.document-type-component{
+	margin-left:6px;
+	padding:5px;
+	margin-bottom:5px;
+	width:146px;
+}
+.document-label{
+	margin-left:15px;
+}
+.document-component{
+	margin-left:2px;
+	padding:5px;
+	margin-bottom:5px;
+	width:146px;
+}
+.email-label{
+	margin-left:15px;
+}
+.email-component{
+	margin-left:8px;
+	padding:5px;
+	margin-bottom:5px;
+	width:405px;
+}
+.btn-Atras-Profe{
+	float:left;
+	padding:5px;
+	font-size:1em;
+	background-color:#0099cc;
+	color:#FFF;
+	margin-left:30px;
+	margin-top:60px;
+}
+.btn-Atras-Profe:hover{
+	cursor:pointer;
+}
+.btn-finalizar{
+	float:right;
+	padding:5px;
+	font-size:1em;
+	background-color:#0099cc;
+	color:#FFF;
+	margin-right:30px;
+	margin-top:60px;
+}
+.btn-finalizar:hover{
+	cursor:pointer;	
+}
+/*================================*/
+/*===========FORMULARIO ESTUDIANTE============*/
+.formEstudiante{
+	float:left;
+	margin-left:400px;
+	margin-top:70px;
+	margin-bottom:40px;
+	width:500px;
+	height:300px;
+	background-color:#FFF;	
+	color:#0099cc;
+}
+.registration-number-label{
+	margin-left:10px;
+}
+.registration-number-component{
+    
+	margin-left:3px;
+	padding:5px;
+	margin-bottom:5px;
+}
+.name-est-label{
+	
+    margin-left:10px;
+	padding:5px;
+	margin-bottom:5px;
+}
+.name-est-component{
+	margin-top:35px;
+	margin-left:3px;
+	padding:5px;
+	margin-bottom:5px;
+}
+.last-est-name-label{
+	margin-left:2px;
+
+}
+.last-est-name-component{
+	margin-left:3px;
+	padding:5px;
+	margin-bottom:5px;
+}
+.gender-est-label{
+	margin-left:2px;
+}
+.gender-est-component{
+	margin-left:15px;
+	padding:5px;
+	margin-bottom:5px;
+	width:150px;
+}
+.phone-est-label{
+	margin-left:13px;
+}
+.phone-est-component{
+	margin-left:8px;
+	padding:5px;
+	margin-bottom:5px;
+}
+.document-est-type-label{
+	margin-left:13px;
+}
+.document-est-type-component{
+	margin-left:6px;
+	padding:5px;
+	margin-bottom:5px;
+	width:110px;
+}
+.document-est-label{
+	margin-left:10px;
+}
+.document-est-component{
+	margin-left:2px;
+	padding:5px;
+	margin-bottom:5px;
+	width:170px;
+}
+.email-est-label{
+	margin-left:10px;
+}
+.email-est-component{
+	margin-left:8px;
+	padding:5px;
+	margin-bottom:5px;
+	width:395px;
+}
+.btn-Atras-Est{
+	float:left;
+	padding:5px;
+	font-size:1em;
+	background-color:#0099cc;
+	color:#FFF;
+	margin-left:30px;
+	margin-top:45px;
+}
+.btn-Atras-Est:hover{
+	cursor:pointer;
+}
+.btn-est-finalizar{
+	float:right;
+	padding:5px;
+	font-size:1em;
+	background-color:#0099cc;
+	color:#FFF;
+	margin-right:30px;
+	margin-top:45px;
+}
+.btn-est-finalizar:hover{
+	cursor:pointer;	
+}
+.pie{
+	margin-top:10px;
+	color:#FFF;
+}
+.pie-label{
+	padding-top:10px;
+	text-align:center;
+}
+/*============================================*/
+
+/*==============================*/
+/*======RESPONSIVE DESIGN CODE======*/
+@media screen and (max-width:320px){
+  .title-system label{
+		font-size:1em; 
+	}
+	.form1{
+		margin-left:2%;
+		width:95%;
+		font-size:0.8em;
+	}
+	.userName{
+		margin-left:2%;
+		margin-top:1%;
+	}
+	.pass{
+		margin-left:2%;	
+	}
+	.confirmPass{
+		margin-left:2%;	
+	}
+	.user-type{
+		margin-left:2%;	
+	}
+	.nombre{
+		margin-top:10%;
+		margin-left:29%;	
+	}
+	.contraseña{
+		margin-left:21%;	
+		padding:5px;
+		margin-bottom:5px;
+	}
+	.confirmContraseña{
+		margin-left:0%;	
+		padding:5px;
+		margin-bottom:5px;
+	}
+	.user-type-component{
+		width:145px;
+		margin-left:15%;
+		padding:5px;
+		margin-bottom:5px;
+	}
+	.btn-siguiente{
+		padding:5px;
+		font-size:1em;
+		background-color:#0099cc;
+		color:#FFF;
+		margin-left:70%;
+		margin-top:60px;
+	}
+	/*===RESPONSIVE PROFESORES====*/
+	.formProfesor{
+		margin-left:2%;
+		width:95%;
+		font-size:0.8em;	
+	}
+	.name-label{
+		margin-left:3%;
+	}
+	.name-component{
+		width:75px;
+		margin-top:50px;
+		margin-left:3px;
+		padding:5px;
+		margin-bottom:5px;
+	}
+	.last-name-label{
+		margin-left:2%;
+	}
+.last-name-component{
+	margin-left:1%;
+}
+.gender-label{
+	margin-left:25px;
+}
+.gender-component{
+	margin-left:6px;
+	padding:5px;
+	margin-bottom:5px;
+	width:146px;
+}
+.phone-label{
+	margin-left:2px;
+}
+.phone-component{
+	margin-left:8px;
+	padding:5px;
+	margin-bottom:5px;
+}
+.document-type-label{
+	margin-left:25px;
+}
+.document-type-component{
+	margin-left:6px;
+	padding:5px;
+	margin-bottom:5px;
+	width:146px;
+}
+.document-label{
+	margin-left:25px;
+}
+.document-component{
+	margin-left:2px;
+	padding:5px;
+	margin-bottom:5px;
+	width:26px;
+}
+.email-label{
+	margin-left:25px;
+}
+.email-component{
+	margin-left:8px;
+	padding:5px;
+	margin-bottom:5px;
+	width:395px;
+}
+.btn-Atras-Profe{
+	float:left;
+	padding:5px;
+	font-size:1em;
+	background-color:#0099cc;
+	color:#FFF;
+	margin-left:30px;
+	margin-top:30px;
+}
+.btn-Atras-Profe:hover{
+	cursor:pointer;
+}
+.btn-finalizar{
+	float:right;
+	padding:5px;
+	font-size:1em;
+	background-color:#0099cc;
+	color:#FFF;
+	margin-right:30px;
+	margin-top:30px;
+}
+.btn-finalizar:hover{
+	cursor:pointer;	
+}
+	/*=============================*/
+	
+}
+@media screen and (max-width:360px) and (min-width:321px){
+}
+@media screen and (max-width:768px) and (min-width:361px){
+
+}
+@media screen and (max-width:800px) and (min-width:769px){
+}
+@media screen and (max-width:1920px) and (min-width:801px){
+
+}
+/*============================*/

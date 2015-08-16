@@ -20,15 +20,16 @@ namespace TeacherControl5._1.ControlPanel.Profesor.Registros
         {
             
             semestres.Descripcion = DescripcionTextBox.Text;
-            semestres.Fechainicio = DateTime.Now;
-            semestres.Fechafin = DateTime.Now;
-            //semestres.Fechainicio =Convert.ToDateTime(FechaInicioTextBox.Text);
-            //semestres.Fechafin = Convert.ToDateTime(FechaFinTextBox.Text);
+            semestres.Fechainicio = FechaInicioTextBox.Text;
+            semestres.Fechafin = FechaFinTextBox.Text;
+            int id = 0;
+            int.TryParse(Session["IdUsuario"].ToString(), out id);
+            semestres.IdProfesor = id;
             if (CodigoTextBox.Text == string.Empty)
             {
                 if (semestres.Insertar())
                 {
-                    limpiarComponentes();
+                    LimpiarComponentes();
                 }
             }
             else
@@ -36,21 +37,14 @@ namespace TeacherControl5._1.ControlPanel.Profesor.Registros
                 semestres.Periodo = PeriodoTextBox.Text;
                 if (semestres.Modificar())
                 {
-                    limpiarComponentes();
+                    LimpiarComponentes();
                 }
             }
             
 
         }
 
-        private void limpiarComponentes()
-        {
-            CodigoTextBox.Text = " ";
-            DescripcionTextBox.Text = " ";
-            PeriodoTextBox.Text = " ";
-            FechaFinTextBox.Text = " ";
-            FechaInicioTextBox.Text = " ";
-        }
+  
 
         protected void NuevoButton_Click(object sender, EventArgs e)
         {
@@ -64,6 +58,11 @@ namespace TeacherControl5._1.ControlPanel.Profesor.Registros
             PeriodoTextBox.Text = " ";
             FechaFinTextBox.Text = " ";
             FechaInicioTextBox.Text = " ";
+        }
+
+        protected void BuscarButton_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

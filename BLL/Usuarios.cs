@@ -58,6 +58,20 @@ namespace BLL
             return Retorno;
         }
 
+        public bool BuscarIdUsuario()
+        {
+            bool Retorno = false;
+            DataTable dt = new DataTable();
+            dt = conexion.BuscarDb("Select max(IdUsuario) as IdUsuario  from Usuarios");
+
+            if (dt.Rows.Count > 0)
+            {
+                Retorno = true;
+                IdUsuario = (int)dt.Rows[0]["IdUsuario"];
+            }
+            return Retorno;
+        }
+
         public Boolean Autenticar(string NombreUsuario, string Clave)
         {
             bool Retorno = false;

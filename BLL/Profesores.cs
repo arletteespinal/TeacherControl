@@ -33,7 +33,7 @@ namespace BLL
 
         public bool Insertar()
         {
-            return conexion.EjecutarDB("INSERT INTO Profesores(Nombres,Apellidos,Genero,Email,Telefono,Documento,IdTipoDocumento)VALUES('" + this.Nombres + "','" + this.Apellidos +"','"+this.Genero+ "','" + this.Email + "','" + this.Telefono + "','" + this.Documento + "','" + this.IdTipoDocumento + "')");
+            return conexion.EjecutarDB("INSERT INTO Profesores(IdProfesor,Nombres,Apellidos,Genero,Email,Telefono,Documento,IdTipoDocumento)VALUES('"+this.IdProfesor+"','" + this.Nombres + "','" + this.Apellidos +"','"+this.Genero+ "','" + this.Email + "','" + this.Telefono + "','" + this.Documento + "','" + this.IdTipoDocumento + "')");
         }
         public bool Modificar()
         {
